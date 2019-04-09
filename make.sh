@@ -13,8 +13,7 @@ do
   cd $i
   for file in ${files[*]}
   do
-    mkdir $file
-    touch $file/$i.$file
+    touch $i.$file
   done
   cd ..
 done
