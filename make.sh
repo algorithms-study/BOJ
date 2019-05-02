@@ -5,7 +5,7 @@ if [ "$#" -lt 2 ]; then
   exit 1
 fi
 
-files=("js" "py" "cpp")
+files=("cpp" "c")
 
 for ((i = $1; i <= $2; i++))
 do
