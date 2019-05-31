@@ -6,7 +6,7 @@ using namespace std;
 
 int n, j = 1;
 vector<int> m;
-vector<char> print;
+vector<int> print;
 
 int main() {
   stack<int> stack;
@@ -29,14 +29,18 @@ int main() {
 
     while (stack.top() != m[i]) {
       stack.push(j++);
-      print.push_back('+');
+      print.push_back(1);
     }
 
     stack.pop();
-    print.push_back('-');
+    print.push_back(0);
   }
 
   for (int i = 0; i < print.size(); i++) {
-    cout << print[i] << endl;
+    if (print[i] == 1) {
+      cout << "+\n";
+    } else {
+      cout << "-\n";
+    }
   }
 }
