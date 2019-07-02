@@ -1,6 +1,6 @@
-# Algorithms
+## BAEKJOON (BOJ) PROBLEM SOLVING
 
-It starts in May.
+Handle: [getsolaris](https://www.acmicpc.net/user/getsolaris)
 
 ```bash
 $ chmod 777 make.sh
